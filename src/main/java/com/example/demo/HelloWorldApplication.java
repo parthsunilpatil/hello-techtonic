@@ -16,11 +16,6 @@ public class HelloWorldApplication {
 		model.addAttribute("name", name);
         return "greeting";
     }
-	
-	@GetMapping("/status")
-	public String status() {
-		return "I am working!!";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(HelloWorldApplication.class, args);
